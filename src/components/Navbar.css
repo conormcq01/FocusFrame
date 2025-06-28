@@ -1,0 +1,28 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background: rgba(0, 188, 212, 0.1);
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: inherit;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.nav-link:hover {
+  background-color: rgba(0, 188, 212, 0.2);
+}
+
+.nav-link.active {
+  background-color: rgba(0, 188, 212, 0.4);
+  color: black;
+}
