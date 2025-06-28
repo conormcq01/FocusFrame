@@ -6,6 +6,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
+    publicPath: '/FocusFrame/', // 👈 REQUIRED for GitHub Pages
     clean: true,
   },
   resolve: {
@@ -33,6 +34,7 @@ module.exports = {
     static: './dist',
     port: 3000,
     open: true,
+    historyApiFallback: true, // 👈 REQUIRED for React Router refresh to work
   },
   mode: 'development',
 };

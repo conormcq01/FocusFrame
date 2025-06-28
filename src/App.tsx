@@ -15,7 +15,7 @@ const App = () => {
   }, [darkMode]);
 
   return (
-    <Router>
+    <Router basename="/FocusFrame">
       <div className="app">
         <Navbar />
         <button
